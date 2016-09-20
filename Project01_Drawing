@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-
+  // Characteristics of ellipse.
    var c = color(246, 215, 223); // Defining variable color 'c'(pink).
   fill(c); // Filling rectangle with color 'c'(pink).
   stroke(255); // Outline of ellipse is white.
@@ -27,8 +27,9 @@ function draw() {
   {
     for(g = 0;g<height;g=g+greenincrementer)
     {
-      fill(246, 215, 223); // Made color the same as ellipse.
-      stroke(255) // Outline of square is white.
+      // Characteristics of squares that are filling up page.
+      fill(180, 214, 237); // Color of squares (inside).
+      stroke(255) // Outline of square.
       rectMode(CORNER);
       x = min(random(width), random(width)); // lesser of the two
       y = min(random(height), random(height)); // lesser of the two
