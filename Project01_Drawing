@@ -14,6 +14,7 @@ function setup() {
 }
 
 function draw() {
+  // This was taken from Professor Dubois's class Creative Coding.
   // Characteristics of ellipse.
    var c = color(246, 215, 223); // Defining variable color 'c'(pink).
   fill(c); // Filling rectangle with color 'c'(pink).
