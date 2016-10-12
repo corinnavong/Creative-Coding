@@ -1,0 +1,64 @@
+// This code was inspired from Luke Dubois's Creative Coding class.
+
+
+function preload() {
+  myFont = loadFont('KhmerSangamMN.ttf'); // This is the font that will be in the background. Must put font file into same folder as this project.
+}
+
+
+function setup() {
+  createCanvas(800, 467);
+  background(249, 228, 235);
+  fill(0);
+
+  
+  loadFont('KhmerSangamMN.ttf', drawText);
+}
+
+
+function drawText(font) {
+  
+  // Title
+  fill('#a0aae2');
+  textFont(font, 38);
+  text('momofuku milk bar "cereal milk" recipe:', 2, 35);
+  
+  // Subtitle
+  textFont(font, 20);
+  fill('#b9b3f8');
+  text('makes 2 and 1/2 cups, serves 4', 2, 65);
+  
+  // Body
+  fill('#b4e1d8');
+  textFont(font, 17);
+  text('ingredients:', 2, 90);
+  text('100 g (2 3/4 cups) cornflakes, 825 g (3 3/4 cups) cold milk, 30 g (2 tbs tightly packed) light brown sugar,', 2, 110);
+  text('1 g (1/4 tsp) kosher salt', 2, 130);
+  fill('#fca4e3');
+  text('how to make it:', 2, 160);
+  text('1. heat the oven to 300 degrees f.', 2, 180);
+  text('2. spread the cornflakes on a parchment-lined sheet pan. bake for 15 minutes, until lightly toasted. cool', 2, 200);
+  text('completely. toasting the cornflakes before steeping them deepens the flavor of the milk. taste your cereal', 2, 220);
+  text(' milk after you make it. if you want it a little sweeter, don’t be shy; add a little more brown sugar. if you want', 2, 240);
+  text('a more mellow cereal milk, add a splash of fresh milk and a pinch of salt.', 2, 260);
+  text('3. transfer the cooled cornflakes to a large pitcher. pour the milk into the pitcher and stir vigorously. let steep', 2, 280);
+  text('for 20 minutes at room temperature.', 2, 300);
+  text('4. strain the mixture through a fine-mesh sieve, collecting the milk in a medium bowl. the milk will drain off', 2, 320);
+  text('quickly at first, then become thicker and starchy toward the end of the straining process. using the back of a', 2, 340);
+  text('ladle (or your hand), wring the milk out of the cornflakes, but do not force the mushy cornflakes through the', 2, 360);
+  text('sieve.', 2, 380);
+  text('5. whisk the brown sugar and salt into the milk until fully dissolved. store in a clean pitcher or glass milk jug,', 2, 400);
+  text(' refrigerated, for up to 1 week.', 2, 420);
+  
+  // Endnote
+  fill('#9cdfe5');
+  textFont(font, 25);
+  text('start cooking!', 2, 450);
+  fill('#ffffff');
+  textFont(font, 15);
+  text('(recipe taken from milkbarstore.com)', 155, 450)
+
+}
+
+  
+
